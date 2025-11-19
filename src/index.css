@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222 47% 11%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+
+    /* Bold SFU Red */
+    --primary: 0 85% 48%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 0 85% 58%;
+
+    /* Vibrant Blue for gondola/mountain theme */
+    --secondary: 215 85% 55%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 220 14% 96%;
+    --muted-foreground: 215 16% 47%;
+
+    /* Accent blue */
+    --accent: 210 100% 50%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 0 85% 48%;
+
+    --radius: 0.75rem;
+
+    /* Gradients - Red to Blue theme */
+    --gradient-hero: linear-gradient(135deg, hsl(0 85% 48%) 0%, hsl(215 85% 55%) 100%);
+    --gradient-mountain: linear-gradient(180deg, hsl(215 85% 55%) 0%, hsl(210 100% 50%) 100%);
+    --gradient-patriotic: linear-gradient(90deg, hsl(0 85% 48%) 0%, hsl(0 0% 100%) 50%, hsl(215 85% 55%) 100%);
+    --gradient-subtle: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(220 14% 96%) 100%);
+    
+    /* Shadows */
+    --shadow-elegant: 0 10px 40px -10px hsl(0 85% 48% / 0.25);
+    --shadow-glow: 0 0 60px hsl(215 85% 55% / 0.4);
+    
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .dark {
+    --background: 222 47% 7%;
+    --foreground: 0 0% 98%;
+
+    --card: 222 47% 10%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 222 47% 10%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 0 85% 58%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 0 85% 68%;
+
+    --secondary: 215 85% 65%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 217 33% 17%;
+    --muted-foreground: 215 20% 65%;
+
+    --accent: 210 100% 60%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 217 33% 20%;
+    --input: 217 33% 20%;
+    --ring: 0 85% 58%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}

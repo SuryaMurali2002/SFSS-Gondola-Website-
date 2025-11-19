@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Background circle -->
+  <circle cx="50" cy="50" r="48" fill="#1e40af"/>
+  
+  <!-- Mountain/Peak shape representing SFU -->
+  <path d="M 30 70 L 50 30 L 70 70 Z" fill="#ffffff" opacity="0.9"/>
+  
+  <!-- Gondola cable line -->
+  <line x1="20" y1="50" x2="80" y2="50" stroke="#ffffff" stroke-width="2" opacity="0.7"/>
+  
+  <!-- Gondola car -->
+  <rect x="45" y="45" width="10" height="8" rx="2" fill="#fbbf24"/>
+</svg>
+
