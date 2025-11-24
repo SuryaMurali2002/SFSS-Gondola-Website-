@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import heroImage from "@/assets/gondola-hero.jpg";
 import sfssLogo from "@/assets/sfss-logo.png";
+import movementLogo from "@/assets/movement-logo.png";
 
 export const Hero = () => {
   const scrollToPetition = () => {
@@ -16,6 +17,15 @@ export const Hero = () => {
           src={sfssLogo} 
           alt="Simon Fraser Student Society" 
           className="h-8 md:h-10 w-auto drop-shadow-lg opacity-90 hover:opacity-100 transition-opacity"
+        />
+      </div>
+
+      {/* Movement Logo - Top Right */}
+      <div className="absolute top-6 right-6 md:top-8 md:right-8 z-20 animate-in fade-in slide-in-from-right duration-1000">
+        <img 
+          src={movementLogo} 
+          alt="Movement Metro Vancouver Transit Riders" 
+          className="h-8 md:h-12 w-auto drop-shadow-lg opacity-90 hover:opacity-100 transition-opacity"
         />
       </div>
 
